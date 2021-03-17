@@ -10,10 +10,10 @@ services:
       - PGID=1000
       - TZ=Asia/Hongkong
       - PUBLIC_KEY_FILE=/secrets/id_rsa.pub
-      - SUDO_ACCESS=true #optional
+      - SUDO_ACCESS=false #optional
       - PASSWORD_ACCESS=false #optional
       # - USER_PASSWORD=password #optional
-      - USER_PASSWORD_FILE=/secrets/password.txt #optional
+      # - USER_PASSWORD_FILE=/secrets/password.txt #optional
       - USER_NAME=linuxserver.io #optional
     volumes:
       - ./config:/config
