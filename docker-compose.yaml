@@ -9,7 +9,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Hongkong
-      - PUBLIC_KEY_FILE=/secrets/id_rsa.pub
+      # - PUBLIC_KEY_FILE=/secrets/id_rsa.pub #optional
+      - PUBLIC_KEY_DIR=/secrets
       - SUDO_ACCESS=false #optional
       - PASSWORD_ACCESS=false #optional
       # - USER_PASSWORD=password #optional
